@@ -1,0 +1,47 @@
+.page-main__header {
+  @media (min-width: $tablet-width) {
+    margin-top: -63px;
+  }
+}
+
+.page-main__top-offer {
+  @include wrapper;
+}
+
+.page-main__about {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
+}
+
+.page-main__reviews {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+  }
+}
+
+.page-main__contacts {
+  margin: 0 auto;
+  max-width: 1050px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
+}

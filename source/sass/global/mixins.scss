@@ -1,0 +1,36 @@
+@mixin pseudo($content: "", $pos: absolute) {
+  content: $content;
+  position: $pos;
+}
+
+@mixin clear-list($list-style: none, $padding: 0, $margin: 0) {
+  list-style: $list-style;
+  padding: $padding;
+  margin: $margin;
+}
+
+
+@mixin wrapper($max-width: $mobile-width, $margin: 0 auto) {
+  max-width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+  }
+}
+
+@mixin content-wrapper() {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px 0 225px;
+  }
+}

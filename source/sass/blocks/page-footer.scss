@@ -1,0 +1,49 @@
+.page-footer {
+  background-color: $grey-241;
+  min-height: 160px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+  }
+}
+
+.page-footer__logo-link {
+  font-size: 0;
+  line-height: 0;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    .page-footer__logo {
+      fill: $primary-link-hover;
+      transition: 0.3s;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+}
+
+.page-footer__inner {
+  @include wrapper;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 28px 50px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 28px 0;
+  }
+}

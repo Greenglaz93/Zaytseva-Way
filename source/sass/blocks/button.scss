@@ -1,0 +1,34 @@
+.button {
+  display: block;
+
+  padding: 14px 26px;
+  height: 52px;
+
+  text-align: center;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $grey;
+  background-color: $white;
+
+  border: 2px solid $grey;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $grey;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+}

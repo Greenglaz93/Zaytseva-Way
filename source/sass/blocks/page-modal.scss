@@ -1,0 +1,67 @@
+.page-modal {
+  @include wrapper;
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 999;
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: $white, $alpha: 0.9);
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: -284px;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.page-modal__inner {
+  margin: 0 auto;
+  background-color: $white;
+  padding: 15px 30px 30px 30px;
+  border: 1px solid $grey-198;
+  box-shadow: 0 5px 10px 0 $shadow;
+  width: 320px;
+  min-height: 336px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 15px 92px 30px 92px;
+  }
+}
+
+.page-modal__title {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+
+  margin: 14px auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.page-modal__text {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
