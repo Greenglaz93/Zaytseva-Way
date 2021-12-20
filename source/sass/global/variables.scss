@@ -1,9 +1,24 @@
-$dark: #2c2e3f;
-$white: #ffffff;
-$darker: #141517;
 $black: #000000;
+$darker: #141517;
+$dark: #2c2e3f;
+$grey: #48494d;
+$dark-30: rgba($dark, 0.3);
+$dark-50: rgba($dark, 0.5);
+$darker-60: rgba($darker, 0.6);
+$dark-70: rgba($dark, 0.7);
+$darker-20: rgba($darker, 0.2);
+$darker-70: rgba($darker, 0.7);
+$border: #d7d9df;
+$light: #fbf8f8;
+$white: #ffffff;
+$white-70: rgba($white, 0.7);
+
+$bg-promo: #416e8e;
+$bg-place: #30c4c9;
 $black-10: rgba($black, 0.1);
-$shadow: rgba(0, 1, 1, 0.25);
+$shadow: rgba(41, 54, 66, 0.1);
 
 $primary: #fe7865;
-$primary-link-hover: #f17d4b;
+$primary-hover: #f17d4b;
+
+$btn-width-tablet: 250px;

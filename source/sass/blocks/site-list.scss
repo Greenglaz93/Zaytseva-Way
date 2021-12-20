@@ -1,0 +1,29 @@
+.site-list {
+  @include clear-list;
+  display: flex;
+  align-items: center;
+}
+
+.site-list__link {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  padding: 20px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-hover;
+  }
+}
+
+.site-list__phone-link {
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-left: 25px;
+  text-decoration: underline;
+}

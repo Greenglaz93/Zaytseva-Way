@@ -1,0 +1,13 @@
+.author {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.author__name {
+  line-height: 20px;
+  letter-spacing: -0.47px;
+  font-weight: 500;
+  font-style: normal;
+  color: $dark;
+}

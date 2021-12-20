@@ -1,0 +1,11 @@
+.footer__wrapper {
+  @include wrapper;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer__section:not(:last-child) {
+  border-right: 1px solid $border;
+}

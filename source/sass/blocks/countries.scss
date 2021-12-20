@@ -1,0 +1,70 @@
+.countries {
+  padding-bottom: 490px;
+  padding-top: 10px;
+  background-image: url("../img/bg/bg-tabs-desktop.svg");
+  background-position: center 145px;
+  background-repeat: no-repeat;
+  background-size: 1444px 1088px;
+}
+
+.countries__wrapper {
+  @include wrapper;
+}
+
+.countries__tabs {
+  margin-bottom: 64px;
+}
+
+.countries__list {
+  @include clear-list;
+}
+
+.countries__item {
+  display: none;
+}
+
+.countries__item--active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+  position: relative;
+}
+
+.countries__title {
+  @include heading;
+  padding-top: 10px;
+  line-height: 60px;
+}
+
+.countries__about {
+  color: $dark-70;
+  letter-spacing: -0.47px;
+  max-width: 370px;
+  padding: 0;
+  margin: 0 0 50px;
+}
+
+.countries__btn {
+  width: $btn-width-tablet;
+}
+
+.countries__review-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 595px;
+  position: relative;
+}
+
+.countries__review {
+  z-index: 99;
+}
+
+.countries__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}

@@ -1,37 +1,7 @@
 .page-header {
-  z-index: 1;
-
-  @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, $white 88px, $black-10 88px, $black-10 89px, transparent 89px);
-  }
+  background-color: $white;
 }
 
 .page-header__main-nav {
-  margin: 0 auto;
-}
-
-.page-header__delivery {
-  font-size: 15px;
-  font-weight: 400;
-  color: $grey;
-  line-height: 24px;
-
-  display: none;
-  margin-left: auto;
-
-  @media (min-width: $tablet-width) {
-    padding: 22px 49px 18px 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 3 / 4;
-    padding: 22px 51px 18px 0;
-  }
+  @include wrapper;
 }
