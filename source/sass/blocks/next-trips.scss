@@ -1,0 +1,32 @@
+.next-trips {
+  padding-right: 37px;
+}
+
+.next-trips__heading {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.next-trips__list {
+  @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 50px;
+  min-width: 350px;
+}
+
+.next-trips__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-trips__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-50;
+  display: block;
+  padding: 5px 0;
+}

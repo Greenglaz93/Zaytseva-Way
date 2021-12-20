@@ -1,0 +1,96 @@
+.tariffs {
+  @include clear-list;
+  display: flex;
+  column-gap: 30px;
+}
+
+.tariffs__item {
+  border: 3px solid $dark-30;
+  border-radius: 6px;
+  padding: 27px;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    .tariffs__pros-item:first-child {
+      margin-bottom: 6px;
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    border-color: $primary;
+
+    .tariffs__check-icon {
+      fill: $darker;
+    }
+
+    .tariffs__title {
+      color: $primary;
+    }
+
+    .tariffs__name {
+      letter-spacing: normal;
+    }
+
+    .tariffs__pros-list {
+      border-color: $primary;
+    }
+  }
+}
+
+.tariffs__title {
+  color: $darker-70;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.tariffs__name {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27px;
+  font-weight: 600;
+}
+
+.tariffs__price {
+  font-size: 25px;
+  line-height: 34px;
+  letter-spacing: normal;
+  font-weight: 700;
+}
+
+.tariffs__text {
+  line-height: 24px;
+  margin: 28px 0;
+  padding-right: 20px;
+}
+
+.tariffs__pros-list {
+  @include clear-list;
+  padding-top: 30px;
+  line-height: 32px;
+  color: $dark;
+  border-top: 1px solid $dark-30;
+  margin-bottom: 13px;
+}
+
+.tariffs__pros-item {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.tariffs__check-icon {
+  fill: $primary;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+.tariffs__btn {
+  width: 310px;
+  margin-top: auto;
+}

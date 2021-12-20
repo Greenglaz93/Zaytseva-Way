@@ -1,0 +1,18 @@
+.main__promo {
+  margin-bottom: 201px;
+}
+
+.main__places {
+  @include wrapper;
+}
+
+.main__prices {
+  @include wrapper;
+  margin-top: -270px;
+  margin-bottom: 140px;
+}
+
+.main__feedback {
+  @include wrapper;
+  margin-bottom: 86px;
+}

@@ -1,0 +1,22 @@
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper--required::after {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  color: $primary;
+  content: "*";
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.input-wrapper__error {
+  display: none;
+  top: -27px;
+  font-size: 12px;
+  line-height: 15px;
+  color: $primary;
+}

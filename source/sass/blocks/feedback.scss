@@ -1,0 +1,45 @@
+.feedback {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url("../img/bg/bg-feedback.jpg");
+  background-position: 40px center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.feedback__wrapper {
+  width: 656px;
+  height: 315px;
+  margin-left: auto;
+  padding: 50px;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 4px 30px $shadow;
+  border-radius: 5px;
+}
+
+.feedback__title {
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.feedback__subtext {
+  margin-top: 11px;
+  margin-bottom: 25px;
+  line-height: 150%;
+}
+
+.feedback__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.feedback__btn {
+  width: 176px;
+  margin: 0 auto;
+  padding: 18px;
+  border: 0;
+}

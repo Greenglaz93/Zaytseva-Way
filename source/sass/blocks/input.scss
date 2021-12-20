@@ -1,0 +1,19 @@
+.input {
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 17px;
+  color: $grey;
+  outline: 0;
+  border: 1px solid $grey;
+
+  &--required {
+    padding-left: 26px;
+  }
+
+  &--feedback {
+    width: 270px;
+    border-color: $dark-30;
+  }
+}

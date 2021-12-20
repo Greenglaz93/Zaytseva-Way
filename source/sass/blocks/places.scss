@@ -1,0 +1,34 @@
+.places__heading {
+  @include heading;
+  max-width: 380px;
+
+  &::after {
+    width: 229px;
+    height: 4px;
+  }
+}
+
+.places__details {
+  color: $dark-70;
+  max-width: 379px;
+  padding: 0;
+  margin: 0 0 54px;
+  letter-spacing: -0.47px;
+}
+
+.places__list {
+  @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 60px;
+  row-gap: 100px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 350px;
+  margin-bottom: 100px;
+}
+
+.places__item:last-child:nth-child(3n+5) {
+  margin-left: 60px;
+}

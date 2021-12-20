@@ -9,28 +9,45 @@
   margin: $margin;
 }
 
+@mixin reset() {
+  padding: 0;
+  margin: 0;
+}
 
-@mixin wrapper($max-width: $mobile-width, $margin: 0 auto) {
-  max-width: $mobile-width;
+@mixin wrapper() {
+  max-width: $content-width;
+  padding: 0 40px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
+  @media (max-width: $tablet-width) {
+    padding: 0 20px;
   }
 
-  @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
   }
 }
 
-@mixin content-wrapper() {
-  padding: 0 30px;
+@mixin heading() {
+  padding: 0 0 33px;
+  margin: 0 0 31px;
+  position: relative;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.25px;
+  font-weight: 600;
+  color: $dark;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-  }
+  &::after {
+    @include pseudo;
+    left: 0;
+    bottom: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $primary;
 
-  @media (min-width: $desktop-width) {
-    padding: 0 50px 0 225px;
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 }
