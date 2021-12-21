@@ -2,6 +2,20 @@
   @include clear-list;
   display: flex;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 84px;
+  }
+}
+
+.site-list__item {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    background-color: $light;
+    margin-bottom: 30px;
+  }
 }
 
 .site-list__link {
@@ -10,11 +24,32 @@
   line-height: 17px;
   font-weight: 500;
   padding: 20px;
+  position: relative;
 
   &:hover,
   &:focus,
   &:active {
     color: $primary-hover;
+  }
+
+  @media (max-width: $tablet-width) {
+    color: $grey;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 600;
+
+    &::after {
+      @include pseudo;
+      top: 0;
+      bottom: 0;
+      right: 22px;
+      margin: auto;
+      width: 12px;
+      height: 12px;
+      background-image: url("../img/icons/icon-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
   }
 }
 

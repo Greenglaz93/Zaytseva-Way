@@ -1,7 +1,12 @@
 .prices {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 94px;
   padding-top: 15px;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .prices__tariffs {
@@ -10,18 +15,34 @@
 
 .prices__details {
   padding-top: 116px;
+  width: 300px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto 39px;
+    padding-top: 0;
+  }
 }
 
 .prices__heading {
   @include heading;
   letter-spacing: normal;
   padding-bottom: 23px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .prices__text {
   color: $dark-70;
   line-height: 27px;
   margin-bottom: 60px;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 32px;
+  }
 }
 
 .prices__contact-us {
@@ -30,6 +51,12 @@
   line-height: 34px;
   font-weight: 500;
   margin-bottom: 12px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
 .prices__phone-link {
@@ -38,6 +65,13 @@
   font-size: 20px;
   line-height: 32px;
   color: $black;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    font-size: 18px;
+    color: $primary;
+    text-decoration: underline;
+  }
 }
 
 .prices__phone-icon {
@@ -47,4 +81,8 @@
   fill: none;
   stroke: $primary;
   stroke-width: 2px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

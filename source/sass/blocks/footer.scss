@@ -4,8 +4,28 @@
   justify-content: space-between;
   padding-top: 75px;
   padding-bottom: 75px;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.footer__section {
+  @media (max-width: $tablet-width) {
+    border: 0;
+
+    &:last-child {
+      border-top: 1px solid $border;
+      margin-top: 24px;
+    }
+  }
 }
 
 .footer__section:not(:last-child) {
-  border-right: 1px solid $border;
+  @media (min-width: $desktop-width) {
+    border-right: 1px solid $border;
+  }
 }

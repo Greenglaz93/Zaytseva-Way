@@ -16,4 +16,11 @@
   &:active {
     background-color: $primary-hover;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 40px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
 }
