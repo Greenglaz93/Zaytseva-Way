@@ -2,25 +2,41 @@
   @include clear-list;
   display: flex;
   column-gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    column-gap: 50px;
+    justify-content: center;
+  }
 }
 
 .tariffs__item {
-  border: 3px solid $dark-30;
+  border: 1px solid $dark-30;
   border-radius: 6px;
-  padding: 27px;
+  padding: 29px;
   max-width: 370px;
   display: flex;
   flex-direction: column;
+  background-color: $white;
 
-  &:first-child {
-    .tariffs__pros-item:first-child {
-      margin-bottom: 6px;
+  @media (max-width: $tablet-width) {
+    padding: 18px 19px 50px;
+    max-width: 288px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      .tariffs__pros-item:first-child {
+        margin-bottom: 6px;
+      }
     }
   }
 
   &:hover,
   &:focus-within {
     border-color: $primary;
+    border-width: 3px;
+    padding: 27px;
 
     .tariffs__check-icon {
       fill: $darker;
@@ -37,6 +53,15 @@
     .tariffs__pros-list {
       border-color: $primary;
     }
+
+    @media (max-width: $tablet-width) {
+      padding: 16px 18px 48px 17px;
+
+      .tariffs__btn {
+        bottom: -3px;
+        left: -3px;
+      }
+    }
   }
 }
 
@@ -46,6 +71,14 @@
   align-items: baseline;
   justify-content: space-between;
   margin: 10px 0;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7px;
+    margin-bottom: 0;
+  }
 }
 
 .tariffs__name {
@@ -53,6 +86,10 @@
   line-height: 38px;
   letter-spacing: -1.27px;
   font-weight: 600;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .tariffs__price {
@@ -66,6 +103,12 @@
   line-height: 24px;
   margin: 28px 0;
   padding-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    padding-right: 0;
+    margin: 12px 0 8px;
+  }
 }
 
 .tariffs__pros-list {
@@ -75,12 +118,21 @@
   color: $dark;
   border-top: 1px solid $dark-30;
   margin-bottom: 13px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 21px;
+    margin-bottom: 20px;
+  }
 }
 
 .tariffs__pros-item {
   margin-bottom: 15px;
   padding-left: 30px;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .tariffs__check-icon {
@@ -93,4 +145,11 @@
 .tariffs__btn {
   width: 310px;
   margin-top: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+  }
 }

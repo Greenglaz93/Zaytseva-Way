@@ -16,4 +16,8 @@
     width: 270px;
     border-color: $dark-30;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
 }

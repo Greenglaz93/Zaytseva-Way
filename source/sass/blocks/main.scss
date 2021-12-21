@@ -1,18 +1,35 @@
 .main__promo {
   margin-bottom: 201px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .main__places {
   @include wrapper;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .main__prices {
   @include wrapper;
   margin-top: -270px;
   margin-bottom: 140px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 108px;
+  }
 }
 
 .main__feedback {
   @include wrapper;
   margin-bottom: 86px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }

@@ -1,5 +1,10 @@
 .next-trips {
   padding-right: 37px;
+
+  @media (max-width: $tablet-width) {
+    border-right: 1px solid $border;
+    padding-right: 50px;
+  }
 }
 
 .next-trips__heading {
@@ -7,6 +12,10 @@
   line-height: 32px;
   font-weight: 600;
   margin: 0 0 15px 0;
+
+  @media (max-width: $tablet-width) {
+    margin-left: -18px;
+  }
 }
 
 .next-trips__list {
@@ -16,6 +25,11 @@
   flex-direction: row;
   column-gap: 50px;
   min-width: 350px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 345px;
+    margin-left: -22px;
+  }
 }
 
 .next-trips__item {

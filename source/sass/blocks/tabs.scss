@@ -11,7 +11,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-bottom: 2px solid $dark-30;
+  border-bottom: 1px solid $dark-30;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 20px;
+  }
 }
 
 .tabs__link {
@@ -29,5 +33,5 @@
 }
 
 .tabs__item:not(:last-child) {
-  margin-right: 99px;
+  margin-right: 100px;
 }
