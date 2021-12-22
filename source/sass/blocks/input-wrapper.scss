@@ -15,8 +15,13 @@
 
 .input-wrapper__error {
   display: none;
+  position: absolute;
   top: -27px;
   font-size: 12px;
   line-height: 15px;
   color: $primary;
+
+  &--show {
+    display: block;
+  }
 }

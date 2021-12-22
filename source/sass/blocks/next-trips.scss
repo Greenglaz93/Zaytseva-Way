@@ -22,9 +22,7 @@
   @include clear-list;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  column-gap: 50px;
-  min-width: 350px;
+  margin-left: -50px;
 
   @media (max-width: $tablet-width) {
     min-width: 345px;
@@ -35,12 +33,13 @@
 .next-trips__item {
   display: flex;
   flex-direction: column;
+  margin-left: 50px;
 }
 
 .next-trips__link {
   font-size: 14px;
   line-height: 17px;
-  color: $dark-50;
+  color: $darker-50;
   display: block;
   padding: 5px 0;
 }

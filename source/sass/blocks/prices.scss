@@ -1,8 +1,9 @@
 .prices {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 94px;
   padding-top: 15px;
+  align-items: center;
 
   @media (max-width: $tablet-width) {
     display: block;

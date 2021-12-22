@@ -30,12 +30,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 60px;
-  row-gap: 100px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 350px;
   margin-bottom: 100px;
+  margin-left: -60px;
 
   @media (max-width: $tablet-width) {
     gap: 40px;
@@ -47,8 +43,11 @@
   }
 }
 
-.places__item:last-child:nth-child(3n+5) {
-  @media (min-width: $desktop-width) {
-    margin-left: 60px;
-  }
+.places__item {
+  margin-left: 60px;
+  margin-bottom: 100px;
+}
+
+.places__item:last-child {
+  margin-left: 120px;
 }

@@ -3,13 +3,33 @@
   width: 728px;
   height: 444px;
   background-color: $light;
-  background-image: url("../img/bg/bg-modal.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 150;
   transform: translate(-50%, -50%);
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+  }
+}
+
+.modal--buy {
+  display: none;
+  background-color: $light;
+  background-image: url("../img/bg/bg-modal.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/bg-modal@2x.jpg");
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+  }
 }
 
 .modal--opened {
@@ -21,6 +41,15 @@
   padding: 70px 60px 90px;
   flex-grow: 1;
   text-align: center;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    height: 100vh;
+    margin-left: 0;
+    padding: 16px;
+    background-color: $white;
+    align-items: center;
+  }
 }
 
 .modal__heading {
@@ -40,14 +69,16 @@
   right: 0;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 
   &::after,
   &::before {
     @include pseudo;
-    width: 30px;
+    width: 32px;
     height: 1px;
     top: 50%;
     left: 50%;
+    margin: auto;
     background-color: $darker-20;
   }
 
@@ -65,4 +96,20 @@
   margin: 0 auto;
   padding: 20px;
   border: 0;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
+}
+
+.modal__success-msg {
+  max-width: 400px;
+  margin: auto;
+  padding: 0;
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 500;
+  text-align: center;
+  color: $grey;
 }

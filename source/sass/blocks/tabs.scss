@@ -1,7 +1,11 @@
 .tabs {
   position: relative;
   min-height: 55px;
-  overflow: hidden;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .tabs__list {
