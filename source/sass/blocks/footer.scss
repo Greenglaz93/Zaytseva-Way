@@ -11,6 +11,11 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    padding-top: 160px;
+  }
 }
 
 .footer__section {

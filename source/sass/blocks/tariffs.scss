@@ -4,8 +4,13 @@
   column-gap: 30px;
 
   @media (max-width: $tablet-width) {
-    column-gap: 50px;
     justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    row-gap: 30px;
   }
 }
 
@@ -22,6 +27,10 @@
     padding: 18px 19px 50px;
     max-width: 288px;
     position: relative;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,7 +156,7 @@
   margin-top: auto;
 
   @media (max-width: $tablet-width) {
-    width: 288px;
+    width: $btn-mobile-width;
     position: absolute;
     bottom: -1px;
     left: -1px;

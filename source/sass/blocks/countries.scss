@@ -10,6 +10,10 @@
     padding-bottom: 65px;
     background: none;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 43px;
+  }
 }
 
 .countries__wrapper {
@@ -25,6 +29,10 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 12px;
   }
 }
 
@@ -61,6 +69,11 @@
     padding: 0 20px;
     margin-bottom: 28px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 16px;
+    margin-bottom: 48px;
+  }
 }
 
 .countries__title {
@@ -87,7 +100,11 @@
 }
 
 .countries__btn {
-  width: $btn-width-tablet;
+  width: $btn-tablet-width;
+
+  @media (max-width: $mobile-width) {
+    width: $btn-mobile-width;
+  }
 }
 
 .countries__review-wrapper {
@@ -102,6 +119,10 @@
     overflow: hidden;
     padding-top: 82px;
     min-height: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 50px;
   }
 }
 

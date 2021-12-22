@@ -2,6 +2,11 @@
   display: flex;
   column-gap: 16px;
   align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    row-gap: 14px;
+  }
 }
 
 .author__name {
@@ -10,6 +15,10 @@
   font-weight: 500;
   font-style: normal;
   color: $dark;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 8px;
+  }
 }
 
 .author__avatar {

@@ -53,4 +53,9 @@
       display: none;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }

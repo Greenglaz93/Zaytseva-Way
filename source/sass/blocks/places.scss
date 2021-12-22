@@ -23,6 +23,10 @@
     margin: 0 auto 39px;
     text-align: center;
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto 18px;
+  }
 }
 
 .places__list {
@@ -30,24 +34,41 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 100px;
   margin-left: -60px;
 
   @media (max-width: $tablet-width) {
-    gap: 40px;
-    margin-bottom: 50px;
+    margin-left: -40px;
   }
 
   @media (max-width: $mobile-width) {
-    gap: 35px;
+    margin-left: 0;
   }
 }
 
 .places__item {
   margin-left: 60px;
   margin-bottom: 100px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
 }
 
 .places__item:last-child {
   margin-left: 120px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }
