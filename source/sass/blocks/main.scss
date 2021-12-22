@@ -10,7 +10,11 @@
   @include wrapper;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 71px;
+    margin-bottom: 31px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 5px;
   }
 }
 
@@ -22,6 +26,10 @@
   @media (max-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 108px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 45px;
   }
 }
 

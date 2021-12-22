@@ -2,6 +2,7 @@
   @include clear-list;
   display: flex;
   align-items: center;
+  background-color: $white;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -37,6 +38,7 @@
     font-size: 20px;
     line-height: 140%;
     font-weight: 600;
+    padding: 16px;
 
     &::after {
       @include pseudo;

@@ -9,11 +9,6 @@
   margin: $margin;
 }
 
-@mixin reset() {
-  padding: 0;
-  margin: 0;
-}
-
 @mixin wrapper() {
   max-width: $content-width;
   padding: 0 40px;
@@ -57,5 +52,10 @@
     &::after {
       display: none;
     }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
   }
 }

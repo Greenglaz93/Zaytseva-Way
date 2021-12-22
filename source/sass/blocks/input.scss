@@ -8,13 +8,22 @@
   outline: 0;
   border: 1px solid $grey;
 
-  &--required {
+  &--tel {
     padding-left: 26px;
   }
 
   &--feedback {
     width: 270px;
     border-color: $dark-30;
+
+    @media (max-width: $mobile-width) {
+      width: 288px;
+    }
+  }
+
+  &--modal {
+    width: 100%;
+    border-color: $border;
   }
 
   @media (max-width: $tablet-width) {

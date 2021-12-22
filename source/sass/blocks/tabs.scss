@@ -1,7 +1,11 @@
 .tabs {
   position: relative;
   min-height: 55px;
-  overflow: hidden;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .tabs__list {
@@ -15,6 +19,12 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    overflow: auto;
+    margin-right: 0;
+    margin-left: 15px;
   }
 }
 

@@ -17,7 +17,11 @@
   cursor: default;
 
   @media (max-width: $tablet-width) {
-    padding: 18px 20px 15px;
+    padding: 18px 21px 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 18px 16px 15px;
   }
 }
 
@@ -40,7 +44,7 @@
     height: 50px;
     border: 0;
     background-color: $primary;
-    z-index: 99;
+    z-index: 100;
 
     &::before,
     &::after {
@@ -71,8 +75,8 @@
 .main-nav__phone-link {
   display: flex;
   align-items: center;
-  padding: 21px 2px 20px 30px;
-  margin-left: 23px;
+  padding: 21px 4px 20px 15px;
+  margin-left: 35px;
   font-size: 18px;
   line-height: 32px;
   text-decoration: underline;
@@ -106,7 +110,7 @@
 .main-nav--opened {
   .main-nav__toggle {
     @media (max-width: $tablet-width) {
-      background-color: $white;
+      background-color: transparent;
 
       &::before,
       &::after {
@@ -130,7 +134,7 @@
 
   .main-nav__list {
     @media (max-width: $tablet-width) {
-      min-height: 280px;
+      min-height: 414px;
       padding-top: 134px;
       position: absolute;
       top: 0;
@@ -139,7 +143,7 @@
     }
 
     @media (max-width: $mobile-width) {
-      min-height: 355px;
+      min-height: 568px;
     }
   }
 }

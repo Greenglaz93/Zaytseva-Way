@@ -20,7 +20,7 @@
 <body class="page__body">
 
   <header class="page-header page__header">
-    <nav class="page-header__main-nav main-nav main-nav--closed">
+    <nav class="page-header__main-nav main-nav main-nav--nojs">
       <a href class="main-nav__logo" tabindex="-1">
         <img class="main-nav__logo-image" src="img/logo.svg" width="57" height="22"
           alt="Логотип туристической фирмы «Way»">
@@ -40,7 +40,7 @@
         </li>
       </ul>
       <a class="main-nav__phone-link" href="tel:+749978468446" aria-label="Позвонить по номеру +749978468446">
-        <svg class="main-nav__phone-icon" width="30" height="30" aria-hidden="true" focusable="false">
+        <svg class="main-nav__phone-icon" width="17" height="24" aria-hidden="true" focusable="false">
           <use xlink:href="img/sprite.svg#icon-phone"></use>
         </svg> +7 (499) -784-684-46
       </a>
@@ -76,7 +76,7 @@
       </p>
       <ul class="places__list">
         <li class="places__item place">
-          <a class="place__link" href="#countries" data-tab="Greece">
+          <a class="place__link" href="#countries" data-tab="greece">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/places/greece-tablet.webp 1x,
                       img/places/greece-tablet@2x.webp 2x">
@@ -92,7 +92,7 @@
           </a>
         </li>
         <li class="places__item place">
-          <a class="place__link" href="#countries" data-tab="Albania">
+          <a class="place__link" href="#countries" data-tab="albania">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/places/albania-tablet.webp 1x,
                       img/places/albania-tablet@2x.webp 2x">
@@ -109,7 +109,7 @@
           </a>
         </li>
         <li class="places__item place">
-          <a class="place__link" href="#countries" data-tab="Macedonia">
+          <a class="place__link" href="#countries" data-tab="macedonia">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/places/macedonia-tablet.webp 1x,
                   img/places/macedonia-tablet@2x.webp 2x">
@@ -125,7 +125,7 @@
           </a>
         </li>
         <li class="places__item place">
-          <a class="place__link" href="#countries" data-tab="Montenegro">
+          <a class="place__link" href="#countries" data-tab="montenegro">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/places/montenegro-tablet.webp 1x,
               img/places/montenegro-tablet@2x.webp 2x">
@@ -142,7 +142,7 @@
           </a>
         </li>
         <li class="places__item place">
-          <a class="place__link" href="#countries" data-tab="Croatia">
+          <a class="place__link" href="#countries" data-tab="croatia">
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/places/croatia-tablet.webp 1x,
               img/places/croatia-tablet@2x.webp 2x">
@@ -167,19 +167,19 @@
         <div class="countries__tabs tabs">
           <ul class="tabs__list">
             <li class="tabs__item">
-              <a class="tabs__link tabs__link--active" href data-tab="Greece">Греция</a>
+              <a class="tabs__link tabs__link--active" href data-tab="greece">Греция</a>
             </li>
             <li class="tabs__item">
-              <a class="tabs__link" href data-tab="Albania">Албания</a>
+              <a class="tabs__link" href data-tab="albania">Албания</a>
             </li>
             <li class="tabs__item">
-              <a class="tabs__link" href data-tab="Macedonia">Македония</a>
+              <a class="tabs__link" href data-tab="macedonia">Македония</a>
             </li>
             <li class="tabs__item">
-              <a class="tabs__link" href data-tab="Montenegro">Черногория</a>
+              <a class="tabs__link" href data-tab="montenegro">Черногория</a>
             </li>
             <li class="tabs__item">
-              <a class="tabs__link" href data-tab="Croatia">Хорватия</a>
+              <a class="tabs__link" href data-tab="croatia">Хорватия</a>
             </li>
           </ul>
         </div>
@@ -194,7 +194,7 @@
                 песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая
                 красота природы и атмосфера, царящая в монастырях Метеоры.
               </p>
-              <a class="countries__btn btn" href="">Купить тур сейчас</a>
+              <a class="countries__btn btn btn--buy" href="">Купить тур сейчас</a>
             </div>
             <div class="countries__review-wrapper">
               <div class="countries__review review">
@@ -209,22 +209,22 @@
                     <picture class="author__avatar">
                       <source type="image/webp"
                         srcset="img/avatars/author-greece.webp 1x, img/avatars/author-greece@2x.webp 2x">
-                      <img src="img/avatars/author-greece.jpg"
-                        srcset="img/avatars/author-greece@2x.jpg 2x" alt="Аватар автора отзыва" width="38" height="38">
+                      <img src="img/avatars/author-greece.jpg" srcset="img/avatars/author-greece@2x.jpg 2x"
+                        alt="Аватар автора отзыва" width="38" height="38">
                     </picture>
                     <cite class="author__name">Влада Голицина</cite>
                   </figcaption>
                 </figure>
               </div>
               <picture>
-                <source type="image/webp" media="(max-width: 767px"
-                  srcset="img/tabs/greece-mobile.webp 1px, img/tabs/greece-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px"
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/tabs/greece-mobile.webp 1x, img/tabs/greece-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
                   srcset="img/tabs/greece-tablet.webp 1x, img/tabs/greece-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/tabs/greece-desktop.webp 1x, img/tabs/greece-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="img/tabs/greece-mobile.jpg 1x, img/tabs/greece-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px"
+                <source media="(max-width: 1023px)"
                   srcset="img/tabs/greece-tablet.jpg 1x, img/tabs/greece-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/tabs/greece-desktop.jpg" srcset="img/tabs/greece-desktop.jpg 2x"
                   alt="Комплекс монастырей на вершинах скал в Греции" width="430" height="596">
@@ -240,9 +240,9 @@
                 песок. Однако, присмотревшись, можно понять, что это
                 не песок, а камни, перетёртые до такого мелкого состояния.
               </p>
-              <a class="countries__btn btn" href="">Купить тур сейчас</a>
+              <a class="countries__btn btn btn--buy" href="">Купить тур сейчас</a>
             </div>
-            <div class="countries__reviews-wrapper">
+            <div class="countries__review-wrapper">
               <div class="countries__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <figure class="review__figure">
@@ -254,24 +254,23 @@
                     <picture class="author__avatar">
                       <source type="image/webp"
                         srcset="img/avatars/author-albania.webp 1x, img/avatars/author-albania@2x.webp 2x">
-                      <img src="img/avatars/author-albania.jpg"
-                        srcset="img/avatars/author-albaniamacedonia@2x.jpg 2x" alt="Аватар автора отзыва" width="38"
-                        height="38">
+                      <img src="img/avatars/author-albania.jpg" srcset="img/avatars/author-albaniamacedonia@2x.jpg 2x"
+                        alt="Аватар автора отзыва" width="38" height="38">
                     </picture>
                     <cite class="author__name">Маришка</cite>
                   </figcaption>
                 </figure>
               </div>
               <picture>
-                <source type="image/webp" media="(max-width: 767px"
-                  srcset="img/tabs/albania-mobile.webp 1px, img/tabs/albania-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px"
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/tabs/albania-mobile.webp 1x, img/tabs/albania-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
                   srcset="img/tabs/albania-tablet.webp 1x, img/tabs/albania-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/tabs/albania-desktop.webp 1x, img/tabs/albania-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="img/tabs/albania-mobile.jpg 1x, img/tabs/albania-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px"
+                <source media="(max-width: 1023px)"
                   srcset="img/tabs/albania-tablet.jpg 1x, img/tabs/albania-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/tabs/albania-desktop.jpg" srcset="img/tabs/albania-desktop.jpg 2x"
                   alt="Пляж курорта Ксамиль в Албании" width="430" height="596">
@@ -287,9 +286,9 @@
                 Камен где находится археологический памятник Кокино
                 в длину около 100 метров.
               </p>
-              <a class="countries__btn btn" href="">Купить тур сейчас</a>
+              <a class="countries__btn btn btn--buy" href="">Купить тур сейчас</a>
             </div>
-            <div class="countries__reviews-wrapper">
+            <div class="countries__review-wrapper">
               <div class="countries__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <figure class="review__figure">
@@ -302,24 +301,23 @@
                     <picture class="author__avatar">
                       <source type="image/webp"
                         srcset="img/avatars/author-macedonia.webp 1x, img/avatars/author-macedonia@2x.webp 2x">
-                      <img src="img/avatars/author-macedonia.jpg"
-                        srcset="img/avatars/author-macedonia@2x.jpg 2x" alt="Аватар автора отзыва" width="38"
-                        height="38">
+                      <img src="img/avatars/author-macedonia.jpg" srcset="img/avatars/author-macedonia@2x.jpg 2x"
+                        alt="Аватар автора отзыва" width="38" height="38">
                     </picture>
                     <cite class="author__name">Михаил Кузьмин</cite>
                   </figcaption>
                 </figure>
               </div>
               <picture>
-                <source type="image/webp" media="(max-width: 767px"
-                  srcset="img/tabs/macedonia-mobile.webp 1px, img/tabs/macedonia-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px"
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/tabs/macedonia-mobile.webp 1x, img/tabs/macedonia-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
                   srcset="img/tabs/macedonia-tablet.webp 1x, img/tabs/macedonia-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/tabs/macedonia-desktop.webp 1x, img/tabs/macedonia-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="img/tabs/macedonia-mobile.jpg 1x, img/tabs/macedonia-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px"
+                <source media="(max-width: 1023px)"
                   srcset="img/tabs/macedonia-tablet.jpg 1x, img/tabs/macedonia-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/tabs/macedonia-desktop.jpg"
                   srcset="img/tabs/macedonia-desktop.jpg 2x" alt="Монастырь в Македонии" width="430" height="596">
@@ -333,9 +331,9 @@
                 Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
                 берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
               </p>
-              <a class="countries__btn btn" href="">Купить тур сейчас</a>
+              <a class="countries__btn btn btn--buy" href="">Купить тур сейчас</a>
             </div>
-            <div class="countries__reviews-wrapper">
+            <div class="countries__review-wrapper">
               <div class="countries__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <figure class="review__figure">
@@ -346,24 +344,23 @@
                     <picture class="author__avatar">
                       <source type="image/webp"
                         srcset="img/avatars/author-montenegro.webp 1x, img/avatars/author-montenegro@2x.webp 2x">
-                      <img src="img/avatars/author-montenegro.jpg"
-                        srcset="img/avatars/author-montenegro@2x.jpg 2x" alt="Аватар автора отзыва" width="38"
-                        height="38">
+                      <img src="img/avatars/author-montenegro.jpg" srcset="img/avatars/author-montenegro@2x.jpg 2x"
+                        alt="Аватар автора отзыва" width="38" height="38">
                     </picture>
                     <cite class="author__name">Анастасия Мей</cite>
                   </figcaption>
                 </figure>
               </div>
               <picture>
-                <source type="image/webp" media="(max-width: 767px"
-                  srcset="img/tabs/montenegro-mobile.webp 1px, img/tabs/montenegro-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px"
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/tabs/montenegro-mobile.webp 1x, img/tabs/montenegro-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
                   srcset="img/tabs/montenegro-tablet.webp 1x, img/tabs/montenegro-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/tabs/montenegro-desktop.webp 1x, img/tabs/montenegro-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="img/tabs/montenegro-mobile.jpg 1x, img/tabs/montenegro-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px"
+                <source media="(max-width: 1023px)"
                   srcset="img/tabs/montenegro-tablet.jpg 1x, img/tabs/-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/tabs/montenegro-desktop.jpg"
                   srcset="img/tabs/montenegro-desktop.jpg 2x" alt="Каньон реки Тара в Черногории" width="430"
@@ -380,9 +377,9 @@
                 сталактитами и сталагмитами — формировавшимися тысячи
                 и тысячи лет.
               </p>
-              <a class="countries__btn btn" href="">Купить тур сейчас</a>
+              <a class="countries__btn btn btn--buy" href="">Купить тур сейчас</a>
             </div>
-            <div class="countries__reviews-wrapper">
+            <div class="countries__review-wrapper">
               <div class="countries__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <figure class="review__figure">
@@ -395,23 +392,23 @@
                     <picture class="author__avatar">
                       <source type="image/webp"
                         srcset="img/avatars/author-croatia.webp 1x, img/avatars/author-croatia@2x.webp 2x">
-                      <img src="img/avatars/author-croatia.jpg"
-                        srcset="img/avatars/author-croatia@2x.jpg 2x" alt="Аватар автора отзыва" width="38" height="38">
+                      <img src="img/avatars/author-croatia.jpg" srcset="img/avatars/author-croatia@2x.jpg 2x"
+                        alt="Аватар автора отзыва" width="38" height="38">
                     </picture>
                     <cite class="author__name">Владимир Мулицин</cite>
                   </figcaption>
                 </figure>
               </div>
               <picture>
-                <source type="image/webp" media="(max-width: 767px"
-                  srcset="img/tabs/croatia-mobile.webp 1px, img/tabs/croatia-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px"
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/tabs/croatia-mobile.webp 1x, img/tabs/croatia-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
                   srcset="img/tabs/croatia-tablet.webp 1x, img/tabs/croatia-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/tabs/croatia-desktop.webp 1x, img/tabs/croatia-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="img/tabs/croatia-mobile.jpg 1x, img/tabs/croatia-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px"
+                <source media="(max-width: 1023px)"
                   srcset="img/tabs/croatia-tablet.jpg 1x, img/tabs/croatia-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/tabs/croatia-desktop.jpg" srcset="img/tabs/croatia-desktop.jpg 2x"
                   alt="Подземная пещера Бередине в Хорватии" width="430" height="596">
@@ -464,7 +461,7 @@
               </svg> Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <a class="tariffs__btn btn" href>Купить тур сейчас</a>
+          <a class="tariffs__btn btn btn--buy" href>Купить тур сейчас</a>
         </li>
         <li class="tariffs__item">
           <h3 class="tariffs__title">
@@ -499,7 +496,7 @@
               </svg> Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <a class="tariffs__btn btn" href>Купить тур сейчас</a>
+          <a class="tariffs__btn btn btn--buy" href>Купить тур сейчас</a>
         </li>
       </ul>
     </section>
@@ -516,17 +513,16 @@
               <label class="visually-hidden" for="tel">
                 Введите номер телефона
               </label>
-              <input class="input input--required input--feedback" type="tel" name="tel" id="tel"
-                pattern="^\+7\d{3}\d{7}$" placeholder="+7  Введите 10 цифр номера"
-                aria-label="Поле для ввода номера телефона" required>
+              <input class="input input--tel input--feedback" type="tel" name="tel" id="tel" pattern="^\+7\d{3}\d{7}$"
+                placeholder="+7  Введите 10 цифр номера" aria-label="Поле для ввода номера телефона" required>
             </div>
             <div class="input-wrapper">
               <p class="input-wrapper__error">Данные не верны</p>
               <label class="visually-hidden" for="email">
                 Введите адрес электронной почты
               </label>
-              <input class="input input--feedback" type="email" name="email" id="email" placeholder="E-mail"
-                aria-label="Поле для ввода адреса электронной почты">
+              <input class="input input--email input--feedback" type="email" name="email" id="email"
+                placeholder="E-mail" aria-label="Поле для ввода адреса электронной почты">
             </div>
           </div>
           <button class="feedback__btn btn" type="submit">
@@ -597,38 +593,46 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <div class="overlay"></div>
+
+  <section class="modal  modal--buy">
     <div class="modal__inner">
       <h2 class="modal__heading">
         Купить тур
       </h2>
       <form class="form" method="post" action="#">
-        <div class="form__wrapper form__wrapper--required">
-          <p class="form__error">Данные не верны</p>
+        <div class="input-wrapper input-wrapper--required">
+          <p class="input-wrapper__error">Данные не верны</p>
           <label class="visually-hidden" for="modal-tel">
             Введите номер телефона
           </label>
-          <input class="form__input input input--tel" type="tel" name="tel" id="modal-tel" pattern="^\+7\d{3}\d{7}$"
+          <input class="input input--tel input--modal" type="tel" name="tel" id="modal-tel" pattern="^\+7\d{3}\d{7}$"
             placeholder="+7  Введите 10 цифр номера" aria-label="Поле для ввода номера телефона" required>
         </div>
-        <div class="form__wrapper">
-          <p class="form__error">Данные не верны</p>
+        <div class="input-wrapper">
+          <p class="input-wrapper__error">Данные не верны</p>
           <label class="visually-hidden" for="modal-email">
             Введите адрес электронной почты
           </label>
-          <input class="form__input input" type="email" name="email" id="modal-email" placeholder="E-mail"
+          <input class="input input--email input--modal" type="email" name="email" id="modal-email" placeholder="E-mail"
             aria-label="Поле для ввода адреса электронной почты">
         </div>
-        <button class="form__btn btn" type="submit">
+        <button class="modal__btn btn" type="submit">
           Отправить
         </button>
       </form>
-      <div class="success">
-        <p class="success__message">Форма успешно отправлена,<br>спасибо! :)</p>
-      </div>
     </div>
     <button class="modal__close" type="button" title="Закрыть модальное окно"></button>
   </section>
+
+  <section class="modal modal--success">
+    <h2 class="visually-hidden">Сообщение об успешной отправке формы</h2>
+    <p class="modal__success-msg">
+      Форма успешно отправлена, спасибо! :)
+    </p>
+    <button class="modal__close" type="button" title="Закрыть модальное окно"></button>
+  </section>
+
   <script src="js/script.js" type="module"></script>
 
 </body>
